@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+        "v-carousel": "/components/carousel/index",
+        "v-category": "/components/category/index",
+        "v-recent": "/components/recent/index",
+        "v-consult": "/components/consult/index",
+        "v-support": "/components/support/index"
+  }
+}

@@ -1,0 +1,19 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.swiper {
+    height: 400rpx;
+    width: 100%;
+}
+
+.banner-item {
+    height: 100%;
+    width: 100%;
+}

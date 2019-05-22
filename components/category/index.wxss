@@ -1,0 +1,4 @@
+.small_pic {
+   width: 50rpx; 
+   height: 50rpx;
+}
