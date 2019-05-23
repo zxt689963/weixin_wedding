@@ -1,13 +1,13 @@
 .recent_wrapper{
     display:flex;
     flex-wrap: wrap;
-    padding:10rpx;
+    padding:15rpx;
 }
 
 .recent_item{
     flex-basis: 50%;
     font-size:0;
-    padding:10rpx;
+    padding:15rpx;
     box-sizing: border-box;
 }
 
