@@ -8,6 +8,10 @@
   background-color: #fff;
 }
 
+.item-image{
+  width:100%;
+}
+
 .swiper {
     height: 400rpx;
     width: 100%;

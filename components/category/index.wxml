@@ -1,4 +1,6 @@
-<block wx:for="{{categories}}">
-    <text>{{item.name}}</text>
-    <image class="item-image" src="{{item.small_pic}}" class="small_pic" />
-</block>
+<view class="nav_container">
+    <view wx:for="{{categories}}" class="nav_item">
+        <image class="item-image" src="{{item.small_pic}}" class="small_pic" />
+        <text>{{item.name}}</text>
+    </view>
+</view>
