@@ -7,9 +7,8 @@ const clientModel = new ClientModel()
 
 Page({
     data: {
-
     },
-
+    
     formSubmit: function (e) {
         clientModel.createClient(e.detail.value.name, e.detail.value.contact)
             .then(res => {
@@ -17,10 +16,12 @@ Page({
                     title: '提交成功',
                     icon: "none"
                 })
+            }).
+            catch(res => {
+                console.log(res);
             })
     },
 
     onShareAppMessage: function () {
-
     }
 })

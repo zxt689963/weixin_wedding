@@ -1,7 +1,7 @@
 import {
     HTTP
 }
-    from '../utils/http.js'
+    from '../utils/http'
 
 class BasicModel extends HTTP {
     data = null

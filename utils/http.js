@@ -1,7 +1,10 @@
 import { config } from 'config'
 
 const tips = {
-    1: '抱歉，出现了一个错误'
+    1: '抱歉，出现了一个错误',
+    100: 'appkey不存在',
+    101: 'appkey不正确',
+    102: '不存这条记录'
 }
 
 class HTTP {
@@ -26,7 +29,9 @@ class HTTP {
                 }
                 else {
                     reject()
-                    const error_code = res.data.error_code
+                    console.log(res.data)
+                    const error_code = res.data.code
+                    
                     this._show_error(error_code)
                 }
             },

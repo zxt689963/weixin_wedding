@@ -20,6 +20,9 @@ Page({
                 this.setData({
                     category: res
                 })
+            }).
+            catch(res => {
+                console.log(res);
             })
         
         basicModel.getBasic()
@@ -27,6 +30,9 @@ Page({
                 this.setData({
                     basic: res
                 })
+            }).
+            catch(res => {
+                console.log(res);
             })
     },
 

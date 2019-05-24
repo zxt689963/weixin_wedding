@@ -1,7 +1,7 @@
 import {
     HTTP
 }
-from '../utils/http.js'
+from '../utils/http'
 
 class AppointmentModel extends HTTP {
     data = null

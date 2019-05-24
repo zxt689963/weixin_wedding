@@ -15,6 +15,9 @@ Page({
                 this.setData({
                     categories: res
                 })
+            }).
+            catch(res => {
+                console.log(res);
             })
     },
 
