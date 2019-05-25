@@ -4,5 +4,4 @@
 <image class="item-image" src="{{category.big_pic}}" />
 <view bind:tap="makePhone">打电话</view>
 <view bind:tap="redirectAppointment">到店预约</view>
-
 <v-support />

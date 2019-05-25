@@ -1,7 +1,7 @@
 import {
     HTTP
 }
-from '../utils/http.js'
+from '../utils/http'
 
 class ConsultModel extends HTTP {
     data = null
