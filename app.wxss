@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**app.wxss**/
 .container {
   height: 100%;
@@ -14,5 +13,3 @@ page{
   font-size:14px;
   color:#666;
 }
-=======
->>>>>>> jj/master
