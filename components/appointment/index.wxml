@@ -1,13 +1,12 @@
 <view class="form_wrapper">
   <form bind:submit="formSubmit">
     <input placeholder='姓名' name='name'></input>
-    <input placeholder='电话号码' name='contact'></input>
-    <input placeholder='内容' name='content'></input>
+    <input type="number" placeholder='手机号码' name='contact'></input>
     <view class="section">
-      <picker class="date" mode="date" value="{{date}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+      <picker class="date" mode="date" name='date' value="{{date}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
         <view class="picker"><text wx:if="{{!year}}">请选择</text> {{year}} <text class="str">年</text> | {{month}} <text class="str">月</text> | {{day}} <text class="str">日</text></view>
       </picker>
-      <picker class="time" mode="time" value="{{time}}" start="{{startTime}}" end="{{endTime}}" bindchange="bindTimeChange">
+      <picker class="time" mode="time" name='time' value="{{time}}" start="{{startTime}}" end="{{endTime}}" bindchange="bindTimeChange">
         <view class="time_pick"><text wx:if="{{!hour}}">请选择</text> {{hour}} <text class="str">时</text> | {{minute}} <text class="str">分</text></view>
       </picker>
     </view>

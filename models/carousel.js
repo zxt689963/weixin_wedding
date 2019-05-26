@@ -10,6 +10,11 @@ class CarouselModel extends HTTP {
             url: 'carousels'
         })
     }
+    getCarousel() {
+        return this.request({
+            url: 'first_carousel'
+        })
+    }
 }
 
 export {
