@@ -1,7 +1,7 @@
 <view class="form_wrapper">
-    <form bind:submit="formSubmit">
-        <input placeholder='姓名' name='name'></input>
-        <input placeholder='电话号码' name='contact'></input>
-        <button class="submit_btn" form-type="submit">提交</button>
-    </form>
+  <form bind:submit="formSubmit">
+    <input placeholder='姓名' name='name'></input>
+    <input placeholder='电话号码' name='contact'></input>
+    <button class="submit_btn" form-type="submit">提交</button>
+  </form>
 </view>

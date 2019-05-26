@@ -1,3 +1,20 @@
+.categories_item{
+  font-size:0;
+}
+
 .categories_img{
   width:100%;
+}
+
+.categories_discription{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100rpx;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.categories_name{
+  margin-right:40rpx;
 }

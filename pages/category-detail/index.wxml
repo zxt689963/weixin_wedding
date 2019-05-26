@@ -1,7 +1,29 @@
-<view>{{category.name}}</view>
-<view>{{category.price}}</view>
-<view>{{category.content}}</view>
 <image class="item-image" src="{{category.big_pic}}" />
-<view bind:tap="makePhone">打电话</view>
-<view bind:tap="redirectAppointment">到店预约</view>
+<view class="title">
+  <view class="title_left">
+    <view>{{category.name}}</view>
+    <view class="title_price">{{'¥'+category.price}}</view>
+  </view>
+  <image class="title_right" src="/imgs/img.png" />
+</view>
+<view class="desc_title">
+  <text>套餐介绍</text>
+</view>
+<view class="content_wrapper">
+  <!-- {{category.content}} -->
+  <view class="content_item" wx:for="{{contentList}}">
+    <view class="content_title">
+      <image src="/imgs/img.png" />
+      <text class="title_t">[{{item.title}}]</text>
+    </view>
+    <text class="content_text">{{item.content}}</text>
+  </view>
+</view>
+<view class="detailed_list">
+  <text>{{detailedList}}</text>
+</view>
+<view class="user_btn">
+  <view class="btn consultation" bind:tap="makePhone">咨询</view>
+  <view class="btn appointment" bind:tap="redirectAppointment">预约</view>
+</view>
 <v-support />
