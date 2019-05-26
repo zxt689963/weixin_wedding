@@ -1,2 +1,8 @@
+<view class="banner">
+  <image class="banner" src="/imgs/img.png" />
+</view>
+<view class="title">
+  <text>预约到店</text>
+</view>
 <v-appointment />
 <v-support />

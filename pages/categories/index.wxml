@@ -1,9 +1,10 @@
 <block wx:for="{{categories}}">
-    <view>
-        <image data-id="{{item.id}}" bind:tap="onTap" src="{{item.big_pic}}" />
-        <view>{{item.name}}</view>
-        <view>{{item.price}}</view>
+  <view class="categories_item">
+    <image class="categories_img" data-id="{{item.id}}" bind:tap="onTap" src="{{item.big_pic}}" />
+    <view class="categories_discription">
+      <view class="categories_name">{{item.name}}</view>
+      <view>{{"¥"+item.price}}</view>
     </view>
+  </view>
 </block>
-
 <v-support />
