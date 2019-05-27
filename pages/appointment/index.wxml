@@ -1,5 +1,5 @@
 <view class="banner">
-  <image class="banner" src="/imgs/img.png" />
+  <image class="banner" src="{{carousel.pic}}" />
 </view>
 <view class="title">
   <text>预约到店</text>

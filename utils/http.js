@@ -1,12 +1,5 @@
 import { config } from 'config'
 
-const tips = {
-    1: '抱歉，出现了一个错误',
-    100: 'appkey不存在',
-    101: 'appkey不正确',
-    102: '不存这条记录'
-}
-
 class HTTP {
     request({ url, data = {}, method = 'GET' }) {
         return new Promise((resolve, reject) => {
@@ -29,33 +22,24 @@ class HTTP {
                 }
                 else {
                     reject()
-                    console.log(res.data)
-                    const error_code = res.data.code
-                    
-                    this._show_error(error_code)
+                    wx.showToast({
+                        title: res.data.error,
+                        icon: 'none',
+                        duration: 2000
+                    })
                 }
             },
             fail: (err) => {
                 reject()
-                this._show_error(1)
+                wx.showToast({
+                    title: '抱歉，出现了一个错误',
+                    icon: 'none',
+                    duration: 2000
+                })
             }
         })
 
     }
-
-    _show_error(error_code) {
-        if (!error_code) {
-            error_code = 1
-        }
-        const tip = tips[error_code]
-        wx.showToast({
-            title: tip ? tip : tips[1],
-            icon: 'none',
-            duration: 2000
-        })
-    }
-
-
 }
 
 export { HTTP }

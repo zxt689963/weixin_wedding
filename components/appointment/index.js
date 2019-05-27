@@ -25,12 +25,15 @@ Component({
   methods: {
     formSubmit: function (e) {
       console.log(e.detail.behavior)
-      appointmentModel.createAppointment(e.detail.value.name, e.detail.value.contact, e.detail.value.content)
+      appointmentModel.createAppointment(e.detail.value.name, e.detail.value.contact, e.detail.value.date, e.detail.value.time)
         .then(res => {
           wx.showToast({
             title: '提交成功',
             icon: "none"
           })
+        }).
+        catch(res => {
+            console.log(res);
         })
     },
     bindDateChange: function (e) {
@@ -50,17 +53,5 @@ Component({
         minute:t[1]
       })
     }
-  },
-  attached(){
-    var time = new Date();
-    var year = time.getFullYear();
-    var month = time.getMonth()+1;
-    var day = time.getDate();
-    var hour = time.getHours();
-    var minute = time.getMinutes();
-    this.setData({
-      date:year+'-'+month+'-'+day,
-      time:hour+':'+minute,
-    })
   }
 })
