@@ -1,7 +1,7 @@
 <v-carousel carousels="{{carousels}}" />
-<v-category categories="{{categories}}" />
+<v-photograph photographs="{{photographs}}" />
 <view class="home_title">最新活动</view>
-<v-recent recent="{{categories}}" />
+<v-recent recent="{{photographs}}" />
 <view class="home_title">咨询</view>
 <v-consult />
 <v-support />

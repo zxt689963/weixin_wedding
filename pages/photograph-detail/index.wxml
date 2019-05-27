@@ -1,8 +1,8 @@
-<image class="item-image" src="{{category.big_pic}}" />
+<image class="item-image" src="{{photograph.big_pic}}" />
 <view class="title">
   <view class="title_left">
-    <view>{{category.name}}</view>
-    <view class="title_price">{{'¥'+category.price}}</view>
+    <view>{{photograph.name}}</view>
+    <view class="title_price">{{'¥'+photograph.price}}</view>
   </view>
   <image class="title_right" src="/imgs/img.png" />
 </view>
@@ -15,31 +15,31 @@
       <image src="/imgs/img.png" />
       <text class="title_t">本单亮点</text>
     </view>
-    <text class="content_text">{{category.merit}}</text>
+    <text class="content_text">{{photograph.merit}}</text>
     <view class="content_title">
       <image src="/imgs/img.png" />
       <text class="title_t">适用年龄</text>
     </view>
-    <text class="content_text">{{category.age}}</text>
+    <text class="content_text">{{photograph.age}}</text>
     <view class="content_title">
       <image src="/imgs/img.png" />
       <text class="title_t">服装说明</text>
     </view>
-    <text class="content_text">{{category.clothing}}</text>
+    <text class="content_text">{{photograph.clothing}}</text>
     <view class="content_title">
       <image src="/imgs/img.png" />
       <text class="title_t">照片说明</text>
     </view>
-    <text class="content_text">{{category.picture}}</text>
+    <text class="content_text">{{photograph.picture}}</text>
     <view class="content_title">
       <image src="/imgs/img.png" />
       <text class="title_t">摄影师</text>
     </view>
-    <text class="content_text">{{category.photographer}}</text>
+    <text class="content_text">{{photograph.photographer}}</text>
   </view>
 </view>
 <view class="detailed_list">
-  <text>{{category.others}}</text>
+  <text>{{photograph.others}}</text>
 </view>
 <view class="user_btn">
   <view class="btn consultation" bind:tap="makePhone">咨询</view>

@@ -8,13 +8,13 @@ import {
     CarouselModel
 } from '../../models/carousel'
 import {
-    CategoryModel
-} from '../../models/category'
+    PhotographModel
+} from '../../models/photograph'
 
 const basicModel = new BasicModel()
 const locationModel = new LocationModel()
 const carouselModel = new CarouselModel()
-const categoryModel = new CategoryModel()
+const photographModel = new PhotographModel()
 
 Page({
     data: {
@@ -50,10 +50,10 @@ Page({
             catch(res => {
                 console.log(res);
             })
-        categoryModel.getCategories()
+        photographModel.getPhotographs()
             .then(res => {
                 this.setData({
-                    categories: res
+                    photographs: res
                 })
             }).
             catch(res => {
