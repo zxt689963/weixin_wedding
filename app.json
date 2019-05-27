@@ -28,8 +28,8 @@
             },
             {
                 "pagePath": "pages/appointment/index",
-                "iconPath": "imgs/toolbar/my.png",
-                "selectedIconPath": "imgs/toolbar/my@selected.png",
+                "iconPath": "imgs/toolbar/clock.png",
+                "selectedIconPath": "imgs/toolbar/clock@selected.png",
                 "text": "预约"
             }
         ],
