@@ -5,22 +5,6 @@ import {
 const appointmentModel = new AppointmentModel()
 
 Component({
-    properties: {},
-    data: {
-        // 可通过接口预设时间范围
-        endDate: '2022-01-01',
-        startDate: '2018-01-01',
-        endTime: '18:00',
-        startTime: '09:00',
-        date: '',
-        year: '',
-        month: '',
-        day: '',
-        time: '',
-        hour: '',
-        minute: ''
-    },
-
     methods: {
         formSubmit: function(e) {
             console.log(e.detail.behavior)

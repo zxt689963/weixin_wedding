@@ -1,6 +1,6 @@
 <view class="nav_container">
-  <view wx:for="{{photographs}}" class="nav_item">
-    <image class="item-image" data-id="{{item.id}}" bind:tap="onTap" src="{{item.small_pic}}" class="small_pic" />
+  <view wx:for="{{photographs}}" class="nav_item" bind:tap="onTap">
+    <image class="item-image" data-id="{{item.id}}" src="{{item.small_pic}}" class="small_pic" />
     <text>{{item.name}}</text>
   </view>
 </view>
