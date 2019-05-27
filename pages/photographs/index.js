@@ -23,7 +23,6 @@ Page({
 
     onTap(event) {
         const bid = event.target.dataset.id
-        console.log(bid)
         wx.navigateTo({
             url: `/pages/photograph-detail/index?bid=${bid}`
         })
