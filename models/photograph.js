@@ -1,7 +1,7 @@
 import {
     HTTP
 }
-    from '../utils/http'
+from '../utils/http'
 
 class PhotographModel extends HTTP {
     data = null
