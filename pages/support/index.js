@@ -16,6 +16,10 @@ Page({
                     title: '提交成功',
                     icon: "none"
                 })
+                this.setData({
+                    name: '',
+                    contact: ''
+                })
             }).
             catch(res => {
                 console.log(res);
