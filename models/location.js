@@ -1,7 +1,7 @@
 import {
     HTTP
 }
-    from '../utils/http'
+from '../utils/http'
 
 class LocationModel extends HTTP {
     data = null
@@ -9,7 +9,7 @@ class LocationModel extends HTTP {
         return this.request({
             url: 'location'
         })
-    } 
+    }
 }
 
 export {

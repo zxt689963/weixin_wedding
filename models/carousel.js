@@ -1,7 +1,7 @@
 import {
     HTTP
 }
-    from '../utils/http'
+from '../utils/http'
 
 class CarouselModel extends HTTP {
     data = null

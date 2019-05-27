@@ -1,14 +1,10 @@
 Component({
-    properties: {
+    properties: {},
 
-    },
-
-    data: {
-
-    },
+    data: {},
 
     methods: {
-        getSupport: function (e) {
+        getSupport: function(e) {
             wx.navigateTo({
                 url: '/pages/support/index'
             })

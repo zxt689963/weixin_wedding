@@ -1,12 +1,12 @@
-.categories_item{
+.photographs_item{
   font-size:0;
 }
 
-.categories_img{
+.photographs_img{
   width:100%;
 }
 
-.categories_discription{
+.photographs_discription{
   display:flex;
   justify-content: center;
   align-items:center;
@@ -15,6 +15,6 @@
   font-weight:bold;
 }
 
-.categories_name{
+.photographs_name{
   margin-right:40rpx;
 }

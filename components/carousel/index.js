@@ -5,11 +5,7 @@ Component({
         }
     },
 
-    data: {
+    data: {},
 
-    },
-
-    methods: {
-
-    }
+    methods: {}
 })
