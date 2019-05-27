@@ -9,6 +9,8 @@ Component({
   },
 
   data: {
+    name:'',
+    contact:''
   },
 
   methods: {
@@ -18,6 +20,10 @@ Component({
           wx.showToast({
             title: '提交成功',
             icon: "none"
+          })
+          this.setData({
+            name:'',
+            contact:''
           })
         }).
         catch(res => {

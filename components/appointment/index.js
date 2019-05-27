@@ -9,6 +9,8 @@ Component({
   },
   data: {
     // 可通过接口预设时间范围
+    name:'',
+    contact:'',
     endDate:'2022-01-01',
     startDate:'2018-01-01',
     endTime:'18:00',
@@ -30,6 +32,15 @@ Component({
           wx.showToast({
             title: '提交成功',
             icon: "none"
+          })
+          this.setData({
+            name:'',
+            contact:'',
+            year:'',
+            month:'',
+            day:'',
+            hour:'',
+            minute:''
           })
         }).
         catch(res => {
