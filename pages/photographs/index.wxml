@@ -1,4 +1,4 @@
-<block wx:for="{{categories}}">
+<block wx:for="{{photographs}}">
   <view class="categories_item">
     <image class="categories_img" data-id="{{item.id}}" bind:tap="onTap" src="{{item.big_pic}}" />
     <view class="categories_discription">

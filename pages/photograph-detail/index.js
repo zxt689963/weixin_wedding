@@ -1,25 +1,25 @@
 import {
-    CategoryModel
-} from '../../models/category'
+    PhotographModel
+} from '../../models/photograph'
 import {
     BasicModel
 } from '../../models/basic'
 
-const categoryModel = new CategoryModel()
+const photographModel = new PhotographModel()
 const basicModel = new BasicModel()
 
 Page({
     data: {
-        category: null,
+        photograph: null,
         basic: null
     },
 
     onLoad: function (options) {
         const bid = options.bid
-        categoryModel.getCategory(bid)
+        photographModel.getPhotograph(bid)
             .then(res => {
                 this.setData({
-                    category: res
+                    photograph: res
                 })
             }).
             catch(res => {

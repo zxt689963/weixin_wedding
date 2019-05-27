@@ -1,8 +1,8 @@
 import {
-    CategoryModel
-} from '../../models/category'
+    PhotographModel
+} from '../../models/photograph'
 
-const categoryModel = new CategoryModel()
+const photographModel = new PhotographModel()
 
 Page({
     data: {
@@ -10,10 +10,10 @@ Page({
     },
 
     onLoad: function (options) {
-        categoryModel.getCategories()
+        photographModel.getPhotographs()
             .then(res => {
                 this.setData({
-                    categories: res
+                    photographs: res
                 })
             }).
             catch(res => {
@@ -23,9 +23,8 @@ Page({
 
     onTap(event) {
         const bid = event.target.dataset.id
-        console.log(bid)
         wx.navigateTo({
-            url: `/pages/category-detail/index?bid=${bid}`
+            url: `/pages/photograph-detail/index?bid=${bid}`
         })
     },
 

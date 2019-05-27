@@ -1,9 +1,9 @@
 {
     "pages": [
         "pages/home/index",
-        "pages/category-detail/index",
+        "pages/photograph-detail/index",
         "pages/appointment/index",
-        "pages/categories/index",
+        "pages/photographs/index",
         "pages/support/index"
     ],
     "window": {
@@ -21,7 +21,7 @@
                 "text": "主页"
             },
             {
-                "pagePath": "pages/categories/index",
+                "pagePath": "pages/photographs/index",
                 "iconPath": "imgs/toolbar/category.png",
                 "selectedIconPath": "imgs/toolbar/category@selected.png",
                 "text": "分类"
