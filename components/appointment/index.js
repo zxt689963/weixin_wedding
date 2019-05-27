@@ -14,6 +14,15 @@ Component({
                         title: '提交成功',
                         icon: "none"
                     })
+                    this.setData({
+                        name: '',
+                        contact: '',
+                        year: '',
+                        month: '',
+                        day: '',
+                        hour: '',
+                        minute: ''
+                    })
                 }).
             catch(res => {
                 console.log(res);
