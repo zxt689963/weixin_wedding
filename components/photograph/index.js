@@ -5,8 +5,7 @@ Component({
         }
     },
 
-    data: {
-    },
+    data: {},
 
     methods: {
         onTap(event) {
