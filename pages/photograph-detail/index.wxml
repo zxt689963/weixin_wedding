@@ -4,7 +4,6 @@
     <view>{{photograph.name}}</view>
     <view class="title_price">{{'¥'+photograph.price}}</view>
   </view>
-  <image class="title_right" src="/imgs/detail/share.png" />
 </view>
 <view class="desc_title">
   <text>套餐介绍</text>
