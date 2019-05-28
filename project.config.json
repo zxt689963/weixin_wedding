@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
@@ -68,6 +68,14 @@
 					"id": -1,
 					"name": "联系制作",
 					"pathName": "pages/support/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "support",
+					"pathName": "pages/support/index",
+					"query": "",
 					"scene": null
 				}
 			]

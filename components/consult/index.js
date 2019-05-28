@@ -7,7 +7,10 @@ const consultModel = new ConsultModel()
 Component({
     properties: {},
 
-    data: {},
+    data: {
+        name: '',
+        contact: ''
+    },
 
     methods: {
         formSubmit: function(e) {
