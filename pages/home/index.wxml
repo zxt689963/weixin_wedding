@@ -5,3 +5,4 @@
 <view class="home_title">咨询</view>
 <v-consult />
 <v-support />
+<v-loading class="loading-center" wx:if="{{loadingCenter}}"/>

@@ -1,7 +1,4 @@
 import {
-    BasicModel
-} from '../../models/basic'
-import {
     LocationModel
 } from '../../models/location'
 import {
@@ -10,50 +7,48 @@ import {
 import {
     PhotographModel
 } from '../../models/photograph'
+import {
+    BasicModel
+} from '../../models/basic'
 
-const basicModel = new BasicModel()
 const locationModel = new LocationModel()
 const carouselModel = new CarouselModel()
 const photographModel = new PhotographModel()
+const basicModel = new BasicModel()
 
 Page({
     data: {
+        location: null,
+        carousels: null,
+        photographs: null,
         basic: null,
-        location: null
+        loadingCenter: true
     },
 
     onLoad: function () {
-        basicModel.getBasic()
-            .then(res => {
-                this.setData({
-                    basic: res
-                })
-            }).
-            catch(res => {
-                console.log(res);
-            })
         locationModel.getLocation()
             .then(res => {
                 this.setData({
                     location: res
                 })
-            }).
-            catch(res => {
-                console.log(res);
+                return carouselModel.getCarousels()
             })
-        carouselModel.getCarousels()
             .then(res => {
                 this.setData({
                     carousels: res
                 })
-            }).
-            catch(res => {
-                console.log(res);
+                return photographModel.getPhotographs()
             })
-        photographModel.getPhotographs()
             .then(res => {
                 this.setData({
                     photographs: res
+                })
+                return basicModel.getBasic()
+            })
+            .then(res => {
+                this.setData({
+                    basic: res,
+                    loadingCenter: false  
                 })
             }).
             catch(res => {
