@@ -1,7 +1,8 @@
 <v-carousel carousels="{{carousels}}" />
 <v-photograph photographs="{{photographs}}" />
 <view class="home_title">最新活动</view>
-<v-recent recent="{{photographs}}" />
+<v-recent photographs="{{photographs}}" />
 <view class="home_title">咨询</view>
 <v-consult />
 <v-support />
+<v-loading class="loading-center" wx:if="{{loadingCenter}}"/>

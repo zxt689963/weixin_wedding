@@ -13,3 +13,9 @@ page{
   font-size:14px;
   color:#666;
 }
+
+.loading-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

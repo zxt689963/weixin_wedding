@@ -7,6 +7,8 @@ const clientModel = new ClientModel()
 
 Page({
     data: {
+        name: '',
+        contact: ''
     },
     
     formSubmit: function (e) {

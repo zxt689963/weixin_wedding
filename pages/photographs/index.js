@@ -6,13 +6,14 @@ const photographModel = new PhotographModel()
 
 Page({
     data: {
-
+        loadingCenter: true
     },
 
     onLoad: function (options) {
         photographModel.getPhotographs()
             .then(res => {
                 this.setData({
+                    loadingCenter: false,
                     photographs: res
                 })
             }).

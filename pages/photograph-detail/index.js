@@ -11,7 +11,8 @@ const basicModel = new BasicModel()
 Page({
     data: {
         photograph: null,
-        basic: null
+        basic: null,
+        loadingCenter: true
     },
 
     onLoad: function (options) {
@@ -19,17 +20,14 @@ Page({
         photographModel.getPhotograph(bid)
             .then(res => {
                 this.setData({
-                    photograph: res
+                    photograph: res            
                 })
-            }).
-            catch(res => {
-                console.log(res);
+                return basicModel.getBasic()
             })
-
-        basicModel.getBasic()
             .then(res => {
                 this.setData({
-                    basic: res
+                    basic: res,
+                    loadingCenter: false  
                 })
             }).
             catch(res => {

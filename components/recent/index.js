@@ -1,6 +1,6 @@
 Component({
     properties: {
-        recent: {
+        photographs: {
             type: Array
         }
     },

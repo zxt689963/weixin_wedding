@@ -4,7 +4,6 @@
     <view>{{photograph.name}}</view>
     <view class="title_price">{{'¥'+photograph.price}}</view>
   </view>
-  <image class="title_right" src="/imgs/detail/share.png" />
 </view>
 <view class="desc_title">
   <text>套餐介绍</text>
@@ -13,27 +12,27 @@
   <view class="content_item">
     <view class="content_title">
       <image src="/imgs/detail/star.png" />
-      <text class="title_t">本单亮点</text>
+      <text class="title_t">[本单亮点]</text>
     </view>
     <text class="content_text">{{photograph.merit}}</text>
     <view class="content_title">
       <image src="/imgs/detail/qi.png" />
-      <text class="title_t">适用年龄</text>
+      <text class="title_t">[适用年龄]</text>
     </view>
     <text class="content_text">{{photograph.age}}</text>
     <view class="content_title">
       <image src="/imgs/detail/fz.png" />
-      <text class="title_t">服装说明</text>
+      <text class="title_t">[服装说明]</text>
     </view>
     <text class="content_text">{{photograph.clothing}}</text>
     <view class="content_title">
       <image src="/imgs/detail/jx.png" />
-      <text class="title_t">照片说明</text>
+      <text class="title_t">[照片说明]</text>
     </view>
     <text class="content_text">{{photograph.picture}}</text>
     <view class="content_title">
       <image src="/imgs/detail/sys.png" />
-      <text class="title_t">摄影师</text>
+      <text class="title_t">[摄影师]</text>
     </view>
     <text class="content_text">{{photograph.photographer}}</text>
   </view>
@@ -46,3 +45,4 @@
   <view class="btn appointment" bind:tap="redirectAppointment">预约</view>
 </view>
 <v-support />
+<v-loading class="loading-center" wx:if="{{loadingCenter}}"/>

@@ -6,3 +6,4 @@
 </view>
 <v-appointment />
 <v-support />
+<v-loading class="loading-center" wx:if="{{false}}"/>
