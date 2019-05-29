@@ -15,6 +15,8 @@
 	"appid": "wx5f97133cf84d829b",
 	"projectname": "wedding",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -24,13 +26,25 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": 3,
+					"name": "detail",
+					"pathName": "pages/photograph-detail/index",
+					"query": "bid=3",
+					"scene": null
+				}
+			]
 		}
 	}
 }
