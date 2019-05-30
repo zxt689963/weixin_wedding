@@ -9,3 +9,4 @@
 </block>
 <v-support />
 <v-loading class="loading-center" wx:if="{{loadingCenter}}"/>
+<v-share />
