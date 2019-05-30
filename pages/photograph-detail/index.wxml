@@ -1,5 +1,5 @@
 <image class="item-image" src="{{photograph.big_pic}}" />
-<view class="title">
+<view class="title" wx:if="{{photograph}}">
   <view>{{photograph.name}}</view>
   <view class="title_price">{{'¥'+photograph.price}}</view>
 </view>
@@ -54,3 +54,4 @@
 </view>
 <v-support />
 <v-loading class="loading-center" wx:if="{{loadingCenter}}"/>
+<v-share />
